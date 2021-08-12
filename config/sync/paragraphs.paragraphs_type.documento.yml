@@ -1,0 +1,10 @@
+uuid: 5bb28d91-f260-444d-b0d0-ce8068966d94
+langcode: en
+status: true
+dependencies: {  }
+id: documento
+label: Documento
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

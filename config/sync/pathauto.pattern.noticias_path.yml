@@ -1,0 +1,22 @@
+uuid: 75181e77-8707-4ed5-a9ac-f1b5a6e66a42
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: noticias_path
+label: 'Noticias Path'
+type: 'canonical_entities:node'
+pattern: '[node:field_categorizacion]/[node:title]'
+selection_criteria:
+  aa01eaec-7c4e-47be-9823-6aa5ce46dc4d:
+    id: node_type
+    bundles:
+      noticias: noticias
+    negate: false
+    context_mapping:
+      node: node
+    uuid: aa01eaec-7c4e-47be-9823-6aa5ce46dc4d
+selection_logic: and
+weight: -5
+relationships: {  }

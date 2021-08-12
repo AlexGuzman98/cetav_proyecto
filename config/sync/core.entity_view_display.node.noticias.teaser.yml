@@ -1,0 +1,46 @@
+uuid: f62848f2-ddb3-4c44-ab91-f16828d6f26d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.noticias.body
+    - field.field.node.noticias.field_categorizacion
+    - field.field.node.noticias.field_contenido
+    - field.field.node.noticias.field_des
+    - field.field.node.noticias.field_imagen
+    - field.field.node.noticias.field_resumen
+    - field.field.node.noticias.field_tag
+    - field.field.node.noticias.field_titulo
+    - field.field.node.noticias.field_titulo_tear
+    - node.type.noticias
+  module:
+    - text
+    - user
+id: node.noticias.teaser
+targetEntityType: node
+bundle: noticias
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_categorizacion: true
+  field_contenido: true
+  field_des: true
+  field_imagen: true
+  field_resumen: true
+  field_tag: true
+  field_titulo: true
+  field_titulo_tear: true

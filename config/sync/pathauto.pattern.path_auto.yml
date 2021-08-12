@@ -1,0 +1,23 @@
+uuid: 964f99f2-2b37-4c96-950e-42ee88374875
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: path_auto
+label: Pathautop
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:name]'
+selection_criteria:
+  53cc2a15-7317-4634-8b2c-b62074dae491:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      categorizacion: categorizacion
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 53cc2a15-7317-4634-8b2c-b62074dae491
+selection_logic: and
+weight: -5
+relationships: {  }

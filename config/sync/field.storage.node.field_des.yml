@@ -1,0 +1,24 @@
+uuid: a0572e17-7f7c-4dfa-a66b-1cbbbce1dda0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_des
+field_name: field_des
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Yes|
+      label: Destacada
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,10 @@
+uuid: 1007e0db-850d-496e-a3a9-937d4a9d1a4b
+langcode: en
+status: true
+dependencies: {  }
+id: texto
+label: Texto
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

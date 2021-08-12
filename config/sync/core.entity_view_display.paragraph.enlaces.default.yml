@@ -1,0 +1,27 @@
+uuid: b87d5ea2-c3c0-4f9e-a9da-3b8a8dd4a426
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.enlaces.field_enlace
+    - paragraphs.paragraphs_type.enlaces
+  module:
+    - link
+id: paragraph.enlaces.default
+targetEntityType: paragraph
+bundle: enlaces
+mode: default
+content:
+  field_enlace:
+    weight: 0
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

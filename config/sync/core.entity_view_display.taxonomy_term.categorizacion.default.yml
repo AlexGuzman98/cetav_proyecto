@@ -1,0 +1,48 @@
+uuid: 40dd7a2c-52e5-4569-ae87-9e01434ca068
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.categorizacion.field_descripcion
+    - field.field.taxonomy_term.categorizacion.field_destacada
+    - field.field.taxonomy_term.categorizacion.field_icono
+    - taxonomy.vocabulary.categorizacion
+  module:
+    - options
+    - text
+id: taxonomy_term.categorizacion.default
+targetEntityType: taxonomy_term
+bundle: categorizacion
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_descripcion:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_destacada:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_icono:
+    type: entity_reference_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

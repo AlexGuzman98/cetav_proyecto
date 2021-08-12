@@ -1,0 +1,21 @@
+uuid: 8d576027-5276-43c3-af3a-3934ca4e388f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_des
+    - node.type.noticias
+  module:
+    - options
+id: node.noticias.field_des
+field_name: field_des
+entity_type: node
+bundle: noticias
+label: Destacada
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

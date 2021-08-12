@@ -1,0 +1,21 @@
+uuid: 2f6c2ec6-2822-460c-97fd-2b420b2ffdde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title
+    - node.type.landing_page
+id: node.landing_page.field_title
+field_name: field_title
+entity_type: node
+bundle: landing_page
+label: Title
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Title
+default_value_callback: ''
+settings: {  }
+field_type: string

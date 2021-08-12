@@ -1,0 +1,33 @@
+uuid: 53aa27f3-b8ed-4a72-bb4c-8c76d732c164
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_documento
+    - paragraphs.paragraphs_type.documento
+  module:
+    - entity_reference_revisions
+id: paragraph.documento.field_documento
+field_name: field_documento
+entity_type: paragraph
+bundle: documento
+label: Documento
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      documento: documento
+    target_bundles_drag_drop:
+      documento:
+        enabled: true
+        weight: 3
+      texto:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

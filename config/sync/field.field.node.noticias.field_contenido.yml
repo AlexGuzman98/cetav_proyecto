@@ -1,0 +1,51 @@
+uuid: 42d25cf7-d46c-4355-a19d-eb1ba7090f8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenido
+    - node.type.noticias
+    - paragraphs.paragraphs_type.documento
+    - paragraphs.paragraphs_type.enlaces
+    - paragraphs.paragraphs_type.image_slider
+    - paragraphs.paragraphs_type.texto
+    - paragraphs.paragraphs_type.video_embed
+  module:
+    - entity_reference_revisions
+id: node.noticias.field_contenido
+field_name: field_contenido
+entity_type: node
+bundle: noticias
+label: Contenido
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      documento: documento
+      enlaces: enlaces
+      image_slider: image_slider
+      texto: texto
+      video_embed: video_embed
+    target_bundles_drag_drop:
+      documento:
+        enabled: true
+        weight: 6
+      enlaces:
+        enabled: true
+        weight: 7
+      image_slider:
+        enabled: true
+        weight: 8
+      texto:
+        enabled: true
+        weight: 9
+      video_embed:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions
